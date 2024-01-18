@@ -12,6 +12,15 @@ File: Layout CSS
 @import url("fontawesome-free/css/fontawesome-all.min.css");
 @import url("framework.css");
 
+:root{
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: ##d58cfc;
+    --secudario: #e5b3fe;
+    --gris: #757575;
+    --grisClaro: #dfe9f3;
+}
+
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 .row0, .row0 a{}
@@ -307,7 +316,7 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#A5A6AA; background-color:#282E39;}
+body{color:#A5A6AA; background-color: var(--secudario);}
 a{color:#97A9BD;}
 a:active, a:focus{background:transparent !important;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
@@ -316,7 +325,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#97A9BD !important;}
 
 .overlay{color:#FFFFFF; background-color:inherit;}
 .overlay::after{color:inherit; background-color:rgba(40,46,57,.7);/* #282E39 */}
-.overlay.light::after{background-color:rgba(151,169,189,.7);/* #97A9BD */}
+.overlay.light::after{background-color:rgba(189, 151, 156, 0.7);/* #97A9BD */}
 
 .gradient{color:#474747; background:linear-gradient(to bottom, #F4F4F4 55%, #FFFFFF 50%, #FFFFFF 100%);}/* Overlap dark to make a hard transition */
 @media screen and (max-width:750px){/* Only the colours height has been changed */
@@ -338,7 +347,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#97A9BD !important;}
 .row1{color:#FFFFFF; background-color:#000000;}
 .row2{color:#474747; background-color:#F4F4F4;}
 .row3{color:#474747; background-color:#FFFFFF;}
-.row4{color:#A5A6AA; background-color:#000000;}
+.row4{color:#A5A6AA; background-color:var(--primario)}
 .row5, .row5 a{color:#A5A6AA; background-color:#282E39;}
 .coloured{color:#FFFFFF; background-color:#97A9BD;}
 
@@ -535,4 +544,16 @@ table a, #comments a{background-color:inherit;}
 
 	.font-x2{font-size:1.6rem;}
 	.font-x3{font-size:1.8rem;}
+}
+
+
+/* Imagen_principal
+---------------------------------------------------------------------------------------------------------------*/
+.img_principal {
+	background-image: url('./images/demo/backgrounds/.img_principal2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    /*padding: 20px;*/
+    position: relative;
 }
