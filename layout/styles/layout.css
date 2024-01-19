@@ -455,7 +455,7 @@ table a, #comments a{background-color:inherit;}
 
 /* Media Queries
 --------------------------------------------------------------------------------------------------------------- */
-@-ms-viewport{width:device-width;}
+/*@-ms-viewport{width:device-width;}*/
 
 
 /* Max Wrapper Width - Laptop, Desktop etc.
